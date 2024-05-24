@@ -1,0 +1,22 @@
+.message-container {
+  padding: 20px;
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 1px 1px 1px 1px;
+  border-radius: 10px;
+}
+
+.success {
+  background-color: greenyellow;
+}
+.warning {
+  background-color: red;
+}
+
+.close-button {
+  cursor: pointer;
+  margin-bottom: 14px;
+  float: right;
+}
