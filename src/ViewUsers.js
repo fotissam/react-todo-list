@@ -1,5 +1,5 @@
 import React from "react";
-import Messages from "./Messages";
+// import Messages from "./Messages";
 function ViewUsers() {
   const users = JSON.parse(localStorage.getItem("users")) || [];
 
@@ -11,7 +11,7 @@ function ViewUsers() {
           <li key={index}>{user.username}</li>
         ))}
       </ul>
-      <Messages message="success" />
+      {/* <Messages message="success" /> */}
     </div>
   );
 }

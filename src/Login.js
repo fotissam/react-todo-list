@@ -28,7 +28,7 @@ function Login() {
       <div>
         <h2>Login</h2>
         <form onSubmit={handleLogin}>
-          <div className="py-5">
+          <div className="py-5 form-group">
             <div>
               <label>Username: </label>
               <input
@@ -36,11 +36,13 @@ function Login() {
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
                 required
+                className="form-control"
               />
             </div>
-            <div>
+            <div className="form-group">
               <label>Password: </label>
               <input
+                className="form-control"
                 type="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}

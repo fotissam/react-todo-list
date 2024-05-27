@@ -20,7 +20,7 @@ function Header() {
 
 function App() {
   return (
-    <div className="App col-12 col-md-9 mx-auto">
+    <div className="App col-12 col-md-3 mx-auto">
       <Link to="/users">View Users</Link>
       <DeleteLocalStorage />
       {users ? <Header /> : ""}
