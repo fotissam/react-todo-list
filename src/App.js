@@ -13,7 +13,9 @@ console.log(users);
 function Header() {
   return (
     <header className="header">
-      <p>Your app!</p>
+      <nav class="navbar navbar-light bg-light justify-content-center">
+        <h1 class="navbar-brand mb-0 h1">To-do App</h1>
+      </nav>
     </header>
   );
 }

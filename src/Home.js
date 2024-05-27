@@ -88,18 +88,22 @@ function Form({ handleAddToDo }) {
 
   return (
     <>
-      <form className="form-group" onSubmit={handleInput}>
+      <form className="form-inline" onSubmit={handleInput}>
         <span>Make your own to-do: </span>
-        <input
-          type="text"
-          placeholder="Type your to-do..."
-          value={toDoItemValue}
-          onChange={(e) => setToDoItemValue(e.target.value)}
-          className="form-control"
-        />
-        <button className="btn btn-primary" type="submit">
-          Add
-        </button>
+        <div className="input-group gap-2">
+          <input
+            type="text"
+            placeholder="Type your to-do..."
+            value={toDoItemValue}
+            onChange={(e) => setToDoItemValue(e.target.value)}
+            className="form-control"
+          />
+          <span className="input-group-btn">
+            <button className="btn btn-primary ml-1" type="submit">
+              Add
+            </button>
+          </span>
+        </div>
       </form>
     </>
   );
@@ -163,8 +167,10 @@ function Logout() {
   };
 
   return (
-    <button className="btn btn-danger" onClick={handleLogout}>
-      Logout
-    </button>
+    <div className="mb-4 btn-group btn-group-sm">
+      <button className="btn btn-danger" onClick={handleLogout}>
+        Logout
+      </button>
+    </div>
   );
 }
